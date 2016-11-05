@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/11/05 18:09:59 by nsabbah           #+#    #+#             */
+/*   Updated: 2016/11/05 18:10:07 by nsabbah          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void *ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void *ft_memcpy(void *dst, const void *src, size_t n)
 {
   size_t i;
 
