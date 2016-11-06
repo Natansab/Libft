@@ -6,7 +6,7 @@
 #    By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/06 14:03:12 by nsabbah           #+#    #+#              #
-#    Updated: 2016/11/06 16:58:44 by nsabbah          ###   ########.fr        #
+#    Updated: 2016/11/07 00:06:17 by nsabbah          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,14 +25,14 @@ SRC = $(PATH_SRC)ft_strcat.c $(PATH_SRC)ft_strncat.c  \
 	$(PATH_SRC)ft_strcmp.c $(PATH_SRC)ft_strncmp.c $(PATH_SRC)ft_isalpha.c \
 	$(PATH_SRC)ft_isalpha.c $(PATH_SRC)ft_isdigit.c $(PATH_SRC)ft_isalnum.c \
 	$(PATH_SRC)ft_isascii.c $(PATH_SRC)ft_isprint.c $(PATH_SRC)ft_toupper.c \
-	$(PATH_SRC)ft_tolower.c
+	$(PATH_SRC)ft_tolower.c $(PATH_SRC)ft_atoi.c
 
 OBJ = ft_strcat.o  ft_strcpy.o  ft_strdup.o ft_strndup.o ft_strlen.o \
 	ft_strncpy.o ft_strncat.o ft_strlcat.o ft_memset.o ft_bzero.o ft_memcpy.o \
 	TMP_ft_memccpy.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_strchr.o \
 	ft_strrchr.o ft_strstr.o ft_strnstr.o ft_strcmp.o ft_strncmp.o ft_isalpha.o \
 	ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o \
-	ft_toupper.o ft_tolower.o
+	ft_toupper.o ft_tolower.o ft_atoi.o
 
 
 all: $(NAME)
