@@ -6,7 +6,7 @@
 #    By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/06 14:03:12 by nsabbah           #+#    #+#              #
-#    Updated: 2016/11/07 00:06:17 by nsabbah          ###   ########.fr        #
+#    Updated: 2016/11/07 22:18:24 by nsabbah          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,15 +25,27 @@ SRC = $(PATH_SRC)ft_strcat.c $(PATH_SRC)ft_strncat.c  \
 	$(PATH_SRC)ft_strcmp.c $(PATH_SRC)ft_strncmp.c $(PATH_SRC)ft_isalpha.c \
 	$(PATH_SRC)ft_isalpha.c $(PATH_SRC)ft_isdigit.c $(PATH_SRC)ft_isalnum.c \
 	$(PATH_SRC)ft_isascii.c $(PATH_SRC)ft_isprint.c $(PATH_SRC)ft_toupper.c \
-	$(PATH_SRC)ft_tolower.c $(PATH_SRC)ft_atoi.c
+	$(PATH_SRC)ft_tolower.c $(PATH_SRC)ft_atoi.c $(PATH_SRC)ft_memalloc.c \
+	$(PATH_SRC)ft_memdel.c $(PATH_SRC)ft_strnew.c $(PATH_SRC)ft_strdel.c \
+	$(PATH_SRC)ft_strclr.c $(PATH_SRC)ft_striter.c $(PATH_SRC)ft_putchar.c \
+	$(PATH_SRC)ft_putstr.c $(PATH_SRC)ft_putendl.c $(PATH_SRC)ft_putnbr.c \
+	$(PATH_SRC)ft_putchar_fd.c $(PATH_SRC)ft_putstr_fd.c \
+	$(PATH_SRC)ft_putendl_fd.c $(PATH_SRC)ft_putnbr_fd.c \
+	$(PATH_SRC)ft_striteri.c $(PATH_SRC)ft_strmap.c $(PATH_SRC)ft_strmapi.c \
+	$(PATH_SRC)ft_strequ.c $(PATH_SRC)ft_strsub.c $(PATH_SRC)ft_strjoin.c \
+	$(PATH_SRC)ft_strtrim.c
+
 
 OBJ = ft_strcat.o  ft_strcpy.o  ft_strdup.o ft_strndup.o ft_strlen.o \
 	ft_strncpy.o ft_strncat.o ft_strlcat.o ft_memset.o ft_bzero.o ft_memcpy.o \
 	TMP_ft_memccpy.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_strchr.o \
 	ft_strrchr.o ft_strstr.o ft_strnstr.o ft_strcmp.o ft_strncmp.o ft_isalpha.o \
 	ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o \
-	ft_toupper.o ft_tolower.o ft_atoi.o
-
+	ft_toupper.o ft_tolower.o ft_atoi.o ft_memalloc.o ft_memdel.o \
+	ft_strnew.o ft_strdel.o ft_strclr.o ft_striter.o ft_putchar.o ft_putstr.o \
+	ft_putendl.o ft_putnbr.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o \
+	ft_putnbr_fd.o ft_striteri.o ft_strmap.o ft_strmapi.o ft_strequ.o \
+	ft_strsub.o ft_strjoin.o ft_strtrim.o
 
 all: $(NAME)
 

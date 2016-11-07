@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 14:03:09 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/06 23:59:06 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/07 22:18:03 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,25 @@ int	ft_isprint(int c);
 int	ft_toupper(int c);
 int	ft_tolower(int c);
 int	ft_atoi(const char *str);
+void *ft_memalloc(size_t size);
+void ft_memdel(void **ap);
+char *ft_strnew(size_t size);
+void ft_strclr(char *s);
+void ft_striter(char *s, void (*f)(char *));
+void ft_striteri(char *s,void (*f)(unsigned int, char *));
+char *ft_strmap(char const *s,char( *f)(char));
+int ft_strequ(char const *s1, char const *s2);
+
+char *ft_strsub(char const *s,unsigned int start, size_t len);
+char* ft_strjoin(char const *s1,char const *s2);
+char* ft_strtrim(char const *s);
+void ft_putchar(char c);
+void ft_putstr(char const *s);
+void ft_putendl(char const *s);
+void ft_putnbr(int n);
+void ft_putchar_fd(char c, int fd);
+void ft_putstr_fd(char const *s, int fd);
+void ft_putendl_fd(char const *s, int fd);
+void ft_putnbr_fd(int n, int fd);
+
 #endif

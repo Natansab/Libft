@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 14:02:58 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/06 23:57:06 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/07 22:31:48 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,9 @@ int main(void)
   printf(" Résultat obtenu   : %s\n", ft_strnstr(haystack, needle, 11));
   printf(" Résultat attendu  : %s\n", strnstr(haystack, needle, 11));*/
 
-  printf("Résultat obtenu    : %i\n", ft_atoi("    --4442"));
+/*  printf("Résultat obtenu    : %i\n", ft_atoi("    --4442"));
   printf("Résultat attendu   : %i\n", atoi("    --4442"));
-  //printf("Résultat obtenu   : %i\n", toupper(115));
+  //printf("Résultat obtenu   : %i\n", toupper(115));*/
+  printf("Résultat obtenu    : %s\n", ft_strtrim("   \t  \n\n \t\t  \n\n\nHello \t  Please\n Trim me\n   \n \n \t\t\n  "));
   return (0);
 }
