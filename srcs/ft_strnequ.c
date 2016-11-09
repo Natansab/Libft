@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strequ.c                                        :+:      :+:    :+:   */
+/*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 21:14:58 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/09 17:55:26 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/09 18:02:58 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strequ(char const *s1, char const *s2)
+int ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-  int i;
+  size_t i;
 
   i = 0;
   if (!(s1 && s2))
     return (0);
-  while (s1[i] && s2[i])
+  while (s1[i] && s2[i] && i < n)
   {
     if (s1[i] != s2[i])
       return (0);

@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 14:03:36 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/06 14:03:37 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/09 15:35:18 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,4 @@ void *ft_memmove(void *dst, const void *src, size_t len)
     i++;
     }
     return (dst);
-
-
 }

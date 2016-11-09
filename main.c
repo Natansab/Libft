@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 14:02:58 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/07 22:31:48 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/09 19:23:03 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,19 @@ int main(void)
 /*  printf("Résultat obtenu    : %i\n", ft_atoi("    --4442"));
   printf("Résultat attendu   : %i\n", atoi("    --4442"));
   //printf("Résultat obtenu   : %i\n", toupper(115));*/
-  printf("Résultat obtenu    : %s\n", ft_strtrim("   \t  \n\n \t\t  \n\n\nHello \t  Please\n Trim me\n   \n \n \t\t\n  "));
+  //printf("Résultat obtenu    : %s", ft_strtrim("  \t \t \n   \n\n\n\t"));
+  //int i;
+  //i = 0;
+  //while (*ft_strsplit("      split       this for   me  !       ", ' ')[i])
+  //printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[5]);
+    /*printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[1]);
+      printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[2]);
+      printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[3]);
+      printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[4]);
+      printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[5]);*/
+    //  i++;
+printf("Resultat obtenu : %s\n", ft_itoa(-121));
+
+
   return (0);
 }

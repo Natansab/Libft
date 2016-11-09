@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 18:10:10 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/05 18:10:11 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/09 12:30:29 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char  *ft_strndup(const char *s1, size_t n)
     size_t i;
 
     i = 0;
-    s2 = (char *)malloc(sizeof (*s2) * (ft_strlen(s1) + 1));
+    s2 = (char *)malloc(sizeof (*s2) * (n + 1));
     if (s2 == NULL)
       return NULL;
     while (s1[i] && i < n)

@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 22:16:10 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/07 22:35:55 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/09 15:06:05 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,30 +15,26 @@
 
 char* ft_strtrim(char const *s)
 {
-  size_t i;
+  int i;
   char *str;
-  size_t start;
-  size_t end;
+  int start;
+  int end;
 
-  i = 0;
-  if (s == NULL)
+  start = 0;
+  while ((s[start] == ' ' || s[start] == ',' || s[start] == '\n' ||
+        s[start] == '\t') && s[start])
+      start++;
+  end = (ft_strlen(s) - 1);
+  while ((s[end] == ' ' || s[end] == ',' || s[end] == '\n' || s[end] == '\t')
+        && end > 0 && end <= (int)ft_strlen(s))
+    end--;
+  if (end - start < 0)
+    end = start;
+  if(!(str = (char *)malloc(sizeof(*str) * (end - start + 2))))
     return NULL;
-  str = (char *)malloc(sizeof(*str) * (ft_strlen(s) + 1));
-  if (str == NULL)
-    return NULL;
-  while (s[i] == ' ' || s[i] == ',' || s[i] == '\n' || s[i] == '\t')
-      i++;
-  start = i;
-  i = ft_strlen(s) - 1;
-  while (s[i] == ' ' || s[i] == ',' || s[i] == '\n' || s[i] == '\t')
-    i--;
-  end = i;
-  i = 0;
-  while (i < ft_strlen(s) - (end - start))
-  {
+  i = -1;
+  while (++i <= (end - start) && end > start)
     str[i] = s[start + i];
-    i++;
-  }
   str[i] = '\0';
   return (str);
 }
