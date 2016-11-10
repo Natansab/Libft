@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 14:02:58 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/09 19:23:03 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/10 11:12:06 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,14 +58,22 @@ int main(void)
   //i = 0;
   //while (*ft_strsplit("      split       this for   me  !       ", ' ')[i])
   //printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[5]);
-    /*printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[1]);
+  /*  printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[1]);
       printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[2]);
       printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[3]);
       printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[4]);
-      printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[5]);*/
-    //  i++;
-printf("Resultat obtenu : %s\n", ft_itoa(-121));
-
-
-  return (0);
+      printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[5]);
+*/
+ft_strsplit("0 0 0 0 0 0 0 0 0sdf ", ' ');
+/*//printf("Resultat obtenu : %s\n", ft_itoa(-121));
+char *str = "the cake is a lie !\0I'm hidden lol\r\n";
+char buff1[0xF00] = "there is no stars in the sky";
+char buff2[0xF00] = "there is no stars in the sky";
+size_t max = strlen("the cake is a lie !\0I'm hidden lol\r\n") + 4;
+printf("Taille de cette chaine : %zu\n", strlen("the cake is a lie !\0I'm hidden lol\r\n"));
+printf("ft_strlcat vaut : %zu\n", ft_strlcat(buff1, str, max));
+printf("nouveau buff1 vaut : %s\n", buff1);
+printf("strlcat vaut : %zu\n", strlcat(buff2,str, max));
+printf("nouveau buff2 vaut : %s\n", buff2);
+*/  return (0);
 }
