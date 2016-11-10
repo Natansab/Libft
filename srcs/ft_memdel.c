@@ -6,17 +6,17 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 15:22:22 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/07 18:58:18 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/10 20:22:57 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-void ft_memdel(void **ap)
+void	ft_memdel(void **ap)
 {
-if (ap == NULL)
-    return ;
-  free(*ap);
-  *ap = NULL;
+	if (ap == NULL)
+		return ;
+	free(*ap);
+	*ap = NULL;
 }

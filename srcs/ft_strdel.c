@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdel.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nsabbah <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/11/10 20:23:41 by nsabbah           #+#    #+#             */
+/*   Updated: 2016/11/10 20:23:51 by nsabbah          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 #include <stdlib.h>
 
-void ft_strdel(char **as)
+void	ft_strdel(char **as)
 {
-  if (as == NULL)
-    return ;
-  free(*as);
-  *as = NULL;
+	if (as == NULL)
+		return ;
+	free(*as);
+	*as = NULL;
 }

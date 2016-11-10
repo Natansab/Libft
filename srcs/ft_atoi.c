@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nsabbah <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/11/10 20:18:10 by nsabbah           #+#    #+#             */
+/*   Updated: 2016/11/10 20:18:34 by nsabbah          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include "libft.h"
 #include <ctype.h>
@@ -11,7 +23,7 @@ int	ft_atoi(const char *str)
 	neg = 1;
 	i = 0;
 	count = 0;
-	while(str[i] <= ' ')
+	while (str[i] <= ' ')
 		i++;
 	if ((str[i] == '+' || str[i] == '-') && !ft_isdigit(str[i + 1]))
 		return (0);
@@ -21,7 +33,7 @@ int	ft_atoi(const char *str)
 		i++;
 	if (!ft_isdigit(str[i]))
 		return (0);
-	while(ft_isdigit(str[i]))
+	while (ft_isdigit(str[i]))
 	{
 		count = count * 10 + str[i] - '0';
 		i++;

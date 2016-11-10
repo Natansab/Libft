@@ -6,17 +6,17 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 18:44:05 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/07 19:15:34 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/10 20:37:43 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr(int n)
+void	ft_putnbr(int n)
 {
-  unsigned int nb;
+	unsigned int nb;
 
-  if (n < 0)
+	if (n < 0)
 	{
 		nb = -n;
 		ft_putchar('-');
@@ -25,5 +25,5 @@ void ft_putnbr(int n)
 		nb = n;
 	if (nb > 9)
 		ft_putnbr(nb / 10);
-	ft_putchar (nb % 10 + '0');
+	ft_putchar(nb % 10 + '0');
 }

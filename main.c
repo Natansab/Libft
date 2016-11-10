@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 14:02:58 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/10 11:12:06 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/10 19:23:25 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,9 +64,9 @@ int main(void)
       printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[4]);
       printf("%s", ft_strsplit("      split       this for   me  !       ", ' ')[5]);
 */
-ft_strsplit("0 0 0 0 0 0 0 0 0sdf ", ' ');
-/*//printf("Resultat obtenu : %s\n", ft_itoa(-121));
-char *str = "the cake is a lie !\0I'm hidden lol\r\n";
+//ft_strsplit("                  olol", ' ');
+printf("Resultat obtenu : %s|\n", ft_itoa(0));
+/*char *str = "the cake is a lie !\0I'm hidden lol\r\n";
 char buff1[0xF00] = "there is no stars in the sky";
 char buff2[0xF00] = "there is no stars in the sky";
 size_t max = strlen("the cake is a lie !\0I'm hidden lol\r\n") + 4;

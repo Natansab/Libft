@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 16:51:46 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/06 16:57:18 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/10 20:21:10 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-		return(c - 'a' + 'A');
+		return (c - 'a' + 'A');
 	return (c);
 }

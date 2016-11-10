@@ -6,22 +6,22 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 16:17:39 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/07 18:56:02 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/10 20:35:52 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr(char const *s)
+void	ft_putstr(char const *s)
 {
-  int i;
+	int i;
 
-  if (s == NULL)
-    return ;
-  i = 0;
-  while (s[i])
-  {
-    ft_putchar(s[i]);
-    i++;
-  }
+	if (s == NULL)
+		return ;
+	i = 0;
+	while (s[i])
+	{
+		ft_putchar(s[i]);
+		i++;
+	}
 }

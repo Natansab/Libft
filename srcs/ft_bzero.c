@@ -6,19 +6,19 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 18:09:45 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/06 14:12:44 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/10 20:07:19 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void  ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	size_t i;
 
 	i = 0;
 	if (n == 0)
-		return;
+		return ;
 	while (i < n)
 	{
 		((unsigned char*)s)[i] = '\0';
