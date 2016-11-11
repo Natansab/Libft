@@ -1,32 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/05 18:09:56 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/11 18:56:05 by nsabbah          ###   ########.fr       */
+/*   Created: 2016/11/11 19:24:02 by nsabbah           #+#    #+#             */
+/*   Updated: 2016/11/11 19:25:22 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <libft.h>
 
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+t_list* ft_lstnew(void const *content,size_t content_size)
 {
-	size_t			i;
-	unsigned char	*src1;
-	unsigned char	*dst1;
 
-	src1 = (unsigned char*)src;
-	dst1 = (unsigned char*)dst;
-	i = 0;
-	while (i < n)
-	{
-		dst1[i] = src1[i];
-		if (src1[i] == (unsigned char)c)
-			return (dst + i + 2);
-		i++;
-	}
-	return (NULL);
 }
