@@ -6,13 +6,13 @@
 #    By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/06 14:03:12 by nsabbah           #+#    #+#              #
-#    Updated: 2016/11/12 17:16:38 by nsabbah          ###   ########.fr        #
+#    Updated: 2016/11/14 16:40:32 by nsabbah          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-PATH_SRC = ./srcs/
-HEADER = ./includes/
+PATH_SRC = ./
+HEADER = ./
 FLAG = -Wall -Wextra -Werror
 OPTION = -c -I $(HEADER)
 SRC = $(PATH_SRC)ft_strcat.c $(PATH_SRC)ft_strncat.c  \
