@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 14:03:09 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/12 17:30:12 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/14 16:15:40 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,12 @@ typedef	struct	s_point
 	int h;
 }				t_point;
 
-typedef struct  s_list
+typedef struct	s_list
 {
-	void          *content;
-	size_t        content_size;
-	struct s_list *next;
-}       t_list;
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}				t_list;
 
 void			*ft_memmove(void *dst, const void *src, size_t len);
 char			*ft_strdup(const char *s1);
@@ -82,12 +82,12 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char const *s, int fd);
 void			ft_putendl_fd(char const *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
-t_list 		*ft_lstnew(void const *content,size_t content_size);
-void ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
-void ft_lstdel(t_list **alst, void (*del)(void *, size_t));
-void ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-t_list *ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-void ft_lstadd(t_list **alst, t_list *new);
-void	ft_strdel(char **as);
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+t_list			*ft_lstnew(void const *content, size_t content_size);
+void			ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
+void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+void			ft_lstadd(t_list **alst, t_list *new);
+void			ft_strdel(char **as);
+char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 #endif

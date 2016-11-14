@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 20:34:23 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/11 18:48:52 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/14 15:55:20 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ char		**ft_strsplit(char const *s, char c)
 	char	**ptr;
 	t_point	p;
 
+	if (s == NULL)
+		return (NULL);
 	if (!(ptr = (char **)malloc(sizeof(char*) * (word_count(s, c) + 1))))
 		return (NULL);
 	p.i = 0;

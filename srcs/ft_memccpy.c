@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 18:09:56 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/11 18:56:05 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/14 15:22:47 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	{
 		dst1[i] = src1[i];
 		if (src1[i] == (unsigned char)c)
-			return (dst + i + 2);
+			return (dst + i + 1);
 		i++;
 	}
 	return (NULL);

@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 22:16:10 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/10 20:34:06 by nsabbah          ###   ########.fr       */
+/*   Updated: 2016/11/14 15:56:06 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strtrim(char const *s)
 	int		start;
 	int		end;
 
+	if (s == NULL)
+		return (NULL);
 	start = 0;
 	while ((s[start] == ' ' || s[start] == ',' || s[start] == '\n' ||
 				s[start] == '\t') && s[start])
