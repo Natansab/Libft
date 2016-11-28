@@ -11,8 +11,8 @@
 # **************************************************************************** #
 
 NAME = libft.a
-PATH_SRC = ./
-HEADER = ./
+PATH_SRC = ./src/
+HEADER = ./includes/
 FLAG = -Wall -Wextra -Werror
 OPTION = -c -I $(HEADER)
 SRC = $(PATH_SRC)ft_strcat.c $(PATH_SRC)ft_strncat.c  \
