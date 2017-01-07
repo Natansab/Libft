@@ -6,7 +6,7 @@
 #    By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/06 14:03:12 by nsabbah           #+#    #+#              #
-#    Updated: 2016/11/14 16:40:32 by nsabbah          ###   ########.fr        #
+#    Updated: 2017/01/07 13:07:01 by nsabbah          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ SRC = $(PATH_SRC)ft_strcat.c $(PATH_SRC)ft_strncat.c  \
 	$(PATH_SRC)ft_strtrim.c $(PATH_SRC)ft_strsplit.c $(PATH_SRC)ft_strnequ.c \
 	$(PATH_SRC)ft_itoa.c $(PATH_SRC)ft_lstnew.c $(PATH_SRC)ft_lstdelone.c \
 	$(PATH_SRC)ft_lstdel.c $(PATH_SRC)ft_lstadd.c $(PATH_SRC)ft_lstiter.c \
-	$(PATH_SRC)ft_lstmap.c
+	$(PATH_SRC)ft_lstmap.c $(PATH_SRC)ft_nbrlen.c
 
 
 OBJ = ft_strcat.o  ft_strcpy.o  ft_strdup.o ft_strndup.o ft_strlen.o \
@@ -50,6 +50,7 @@ OBJ = ft_strcat.o  ft_strcpy.o  ft_strdup.o ft_strndup.o ft_strlen.o \
 	ft_putnbr_fd.o ft_striteri.o ft_strmap.o ft_strmapi.o ft_strequ.o \
 	ft_strsub.o ft_strjoin.o ft_strtrim.o ft_strsplit.o ft_strnequ.o ft_itoa.o \
 	ft_lstnew.o ft_lstdelone.o ft_lstdel.o ft_lstadd.o ft_lstiter.o ft_lstmap.o \
+	ft_nbrlen.o
 
 all: $(NAME)
 

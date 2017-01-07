@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 14:03:09 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/14 16:15:40 by nsabbah          ###   ########.fr       */
+/*   Updated: 2017/01/07 13:06:20 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,4 +90,5 @@ t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void			ft_lstadd(t_list **alst, t_list *new);
 void			ft_strdel(char **as);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+int				ft_nbrlen(int nb);
 #endif
