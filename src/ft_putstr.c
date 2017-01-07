@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 16:17:39 by nsabbah           #+#    #+#             */
-/*   Updated: 2016/11/10 20:35:52 by nsabbah          ###   ########.fr       */
+/*   Updated: 2017/01/07 14:32:07 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,8 @@
 
 void	ft_putstr(char const *s)
 {
-	int i;
-
 	if (s == NULL)
-		return ;
-	i = 0;
-	while (s[i])
-	{
-		ft_putchar(s[i]);
-		i++;
-	}
+		write (1, "Null", 4);
+	else
+		write (1, s, ft_strlen(s));
 }
