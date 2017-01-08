@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_intlen_base.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/07 16:17:39 by nsabbah           #+#    #+#             */
-/*   Updated: 2017/01/07 16:53:20 by nsabbah          ###   ########.fr       */
+/*   Created: 2017/01/08 17:27:03 by nsabbah           #+#    #+#             */
+/*   Updated: 2017/01/08 17:27:03 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
-void	ft_putstr(char const *s)
+size_t	ft_intlen_base(unsigned int n, int base)
 {
-	if (s == NULL)
-		write (1, "Null", 4);
-	else
-		write (1, s, ft_strlen(s));
+	size_t			i;
+
+	i = 1;
+	while (n /= base)
+		i++;
+	return (i);
 }
