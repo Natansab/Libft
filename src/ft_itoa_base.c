@@ -6,43 +6,35 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/08 17:21:47 by nsabbah           #+#    #+#             */
-/*   Updated: 2017/01/08 19:00:45 by nsabbah          ###   ########.fr       */
+/*   Updated: 2017/01/10 16:20:27 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	ft_findchar(int value, int base)
+static char	ft_findchar(unsigned int value, int base, char *basestr)
 {
-	if (value % base < 10)
-		return ('0' + (value % base));
-	else
-		return ('a' - 10 + (value % base));
+	return (basestr[value % base]);
 }
 
-char		*ft_itoa_base(int value, int base)
+char		*ft_itoa_base(unsigned int value, int base, char *basestr)
 {
 	size_t			size;
 	size_t			i;
 	char			*tmp;
-	unsigned int	u_value;
 
-	u_value = value < 0 ? -value : value;
-	size = (value < 0 && base == 10) ? ft_intlen_base(u_value, base) + 1 :
-	ft_intlen_base(u_value, base);
+	size = ft_intlen_base(value, base);
 	if (!(tmp = (char*)malloc(sizeof(char) * size + 1)))
 		return (NULL);
 	tmp[size] = '\0';
-	if (!u_value)
+	if (!value)
 		tmp[0] = '0';
 	i = size - 1;
-	while (u_value)
+	while (value)
 	{
-		tmp[i] = ft_findchar(u_value, base);
-		u_value = u_value / base;
+		tmp[i] = ft_findchar(value, base, basestr);
+		value = value / base;
 		i--;
 	}
-	if (value < 0 && base == 10)
-		tmp[0] = '-';
 	return (tmp);
 }
