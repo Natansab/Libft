@@ -6,11 +6,11 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/07 13:03:21 by nsabbah           #+#    #+#             */
-/*   Updated: 2017/01/08 17:24:15 by nsabbah          ###   ########.fr       */
+/*   Updated: 2017/01/11 13:25:21 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_nbrlen(int nb)
+int	ft_nbrlen(long int nb)
 {
 	int i;
 

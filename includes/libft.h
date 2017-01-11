@@ -6,7 +6,7 @@
 /*   By: nsabbah <nsabbah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 14:03:09 by nsabbah           #+#    #+#             */
-/*   Updated: 2017/01/10 17:34:26 by nsabbah          ###   ########.fr       */
+/*   Updated: 2017/01/11 13:25:41 by nsabbah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void			ft_lstadd(t_list **alst, t_list *new);
 void			ft_strdel(char **as);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-int				ft_nbrlen(int nb);
+int				ft_nbrlen(long int nb);
 char		 *ft_itoa_base(unsigned int value, int base, char *basestr);
 size_t	ft_intlen_base(unsigned int n, int base);
 void  ft_putwchar(wchar_t a);
